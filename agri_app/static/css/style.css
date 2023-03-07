@@ -26,9 +26,10 @@ nav {
     align-items: center;
 }
 
-nav .logo {
+nav h2 .logo {
     color: #fcfcfc;
 }
+
 
 nav ul {
     display: flex;
