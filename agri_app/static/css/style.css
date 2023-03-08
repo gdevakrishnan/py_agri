@@ -103,7 +103,8 @@ nav ul li:hover a {
     height: 100vh;
     top: 50px;
     right: -40%;
-    background-color: var(--main2);
+    /* opacity: 0.9; */
+    background-color: var(--footer);
     flex-direction: column;
     z-index: 1000;
     transition: all 0.6s linear;
@@ -113,7 +114,7 @@ nav ul li:hover a {
     width: 100%;
     display: flex;
     justify-content: center;
-    line-height: 60px;
+    line-height: 40px;
     margin: 8px 0px;
   }
 
@@ -126,8 +127,7 @@ nav ul li:hover a {
 
   nav ul li a:hover {
     color: var(--main3);
-    background-color: var(--main1);
-    border-color: var(--main4);
+    opacity: 1;
   }
 
   #check:checked ~ ul {
@@ -211,18 +211,68 @@ nav ul li:hover a {
 }
 
 .signup .container {
-  width: 50%;
+  min-width: 30%;
   height: auto;
+  background-color: var(--footer);
+  border-radius: 10px;
+
 }
 
 .signup .container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   gap: 10px;
   padding: 20px;
+}
+
+.signup .container form .form_group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup .container form .form_group label {
+  color: var(--bg);
+  margin-right: 15px;
+}
+
+.signup .container form input[type="submit"] {
+  background-color: var(--footer);
+  color: var(--main4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid var(--main4);
+  margin-top: 15px;
+}
+
+.signup .container form input[type="text"], .signup .container form input[type="email"], .signup .container form input[type="password"] {
+  padding: 2px 8px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  letter-spacing: 0.6px;
+  color: var(--main4);
+  border-bottom: 2px solid var(--main4);
+}
+
+@media screen and (max-width: 600px) {
+  .signup .container {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .signup .container form .form_group {
+    flex-direction: column;
+  }
+
+  .signup .container form .form_group label {
+    margin-bottom: 12px;
+  }
+
 }
 
 /* FORM | LOGIN */
