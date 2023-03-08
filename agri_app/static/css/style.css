@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
   --main1: #283618;
@@ -49,6 +49,7 @@ nav {
 
 nav h2 .logo {
   color: var(--main4);
+  font-family: 'Kalam', cursive;
 }
 
 nav ul {
@@ -63,6 +64,8 @@ nav ul li {
 
 nav ul li a {
   color: var(--main4);
+  font-family: 'Kalam', cursive;
+  text-transform: capitalize;
 }
 
 nav ul li:hover a {
@@ -184,8 +187,10 @@ nav ul li:hover a {
 }
 
 .about .title {
+  font-family: 'Kalam', cursive;
   margin-bottom: 15px;
   color: var(--main2);
+  font-size: 34px;
 }
 
 .about .content {
