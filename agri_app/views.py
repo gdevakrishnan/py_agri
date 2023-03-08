@@ -11,6 +11,9 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
+def profile(request):
+    return render(request, 'profile.html')
+
 def signup(request):
     if request.method == 'POST':
         name = request.POST['username'];
@@ -20,6 +23,8 @@ def signup(request):
         
         if password1 == password2:
             user = User.objects.create_user(username=name, email=email, password=password1)
+            user.is_staff=True
+            user.is_superuser=True
             user.save()
             messages.success(request,'Your account has been created successful')
             return redirect('login')

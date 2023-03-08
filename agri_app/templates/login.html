@@ -1,4 +1,9 @@
-{% extends 'template.html' %}
-{% block content %}
-    <h2>Login Page</h2>
+{% extends 'template.html' %} {% block content %}
+<div class="container">
+  <form method="post" autocomplete="off">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button type="submit">Log In</button>
+  </form>
+</div>
 {% endblock %}
