@@ -4,6 +4,7 @@
     <div class="container">
         <form method="post" autocomplete="off">
                 {% csrf_token %}
+                <h3 class="title">Sign Up</h3>
                 <div class="form_group">
                     <label for="user-name">User Name</label>
                     {{form.username}}

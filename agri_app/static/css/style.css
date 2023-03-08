@@ -408,3 +408,11 @@ nav ul li:hover a {
 .logout .container p a {
   color: var(--main4);
 }
+
+/* SIGN UP AND LOGIN TITLE */
+.login .container form .title, .signup .container form .title {
+  color: var(--bg);
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
