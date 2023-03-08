@@ -2,8 +2,18 @@
 <section class="login">
     <div class="container">
         <form method="post" autocomplete="off">
+            
             {% csrf_token %}
-            {{form.as_p}}
+            
+            <div class="form_group">
+                <label for="user-name">User Name</label>
+                {{form.username}}
+            </div>
+            
+            <div class="form_group">
+                <label for="password">Password</label>
+                {{form.password}}
+            </div>
             <button type="submit">Log In</button>
         </form>
       </div>

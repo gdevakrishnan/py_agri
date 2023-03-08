@@ -3,15 +3,28 @@
 <section class="signup">
     <div class="container">
         <form method="post" autocomplete="off">
-            {% if messages %}
-                {% for message in messages%}
-                    {{message}}
-                {% endfor %}
-            {% endif %}
-            {% csrf_token %}
-            {{form.as_p}}
-            <input type="submit" value="Sign Up">
+                {% csrf_token %}
+                <div class="form_group">
+                    <label for="user-name">User Name</label>
+                    {{form.username}}
+                </div>
+                <div class="form_group">
+                    <label for="user-gmail">Email</label>
+                    {{form.email}}
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    {{form.password1}}
+                </div>
+                <div class="form_group">
+                    <label for="re-password">Re-Password</label>
+                    {{form.password2}}
+                </div>
+                <input type="submit" value="Sign Up">
+            </div>    
         </form>
+
+        {{form.errors}}
     </div>
 </section>
 {% endblock %}
