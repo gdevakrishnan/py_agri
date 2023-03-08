@@ -13,10 +13,10 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  padding-top: 60px;
 }
 
 section {
+  margin-top: 60px;
   min-height: 100vh;
 }
 
@@ -101,6 +101,28 @@ nav ul li a {
     right: 0;
   }
 }
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  padding: 20px 0px;
+}
+
+.footer p {
+  text-align: center;
+  color: #fcfcfc;
+}
+
+.footer p a {
+  color: #fcfcfc;
+}
+
 
 /* ABOUT */
 .about {
