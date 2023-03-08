@@ -21,6 +21,9 @@
           <li><a href="#">blogs</a></li>
 
           {% if user.is_authenticated %}
+          <li><a href="#">video</a></li>
+          <li><a href="#">surveys</a></li>
+          <li><a href="#">BOT</a></li>
           <li><a href="{% url 'profile'%}">profile</a></li>
           <li><a href="{% url 'logout'%}">logout</a></li>
           {% else %}
