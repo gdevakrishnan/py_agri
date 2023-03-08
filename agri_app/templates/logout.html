@@ -1,0 +1,10 @@
+{% extends 'template.html' %}
+{% block content  %}
+    <section class="logout">
+        <div class="container">
+            <h2>You have been logged out</h2>
+            <p>Login Again? <a href="{% url 'login' %}">Login</a></p>
+        </div>
+    </section>
+{% endblock %}
+
