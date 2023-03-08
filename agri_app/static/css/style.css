@@ -304,6 +304,17 @@ nav ul li:hover a {
   padding: 20px;
 }
 
+.login .container form .login_request {
+  color: var(--bg);
+  letter-spacing: 1px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.login .container form .login_request a {
+  color: var(--main4);
+}
+
 .login .container form .form_group {
   width: 100%;
   display: flex;
