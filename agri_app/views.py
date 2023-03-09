@@ -23,8 +23,8 @@ def signup(request):
         
         if password1 == password2:
             user = User.objects.create_user(username=name, email=email, password=password1)
-            user.is_staff=True
-            user.is_superuser=True
+            user.is_staff=False
+            user.is_superuser=False
             user.save()
             messages.success(request,'Your account has been created successful')
             return redirect('login')
