@@ -43,6 +43,7 @@ def login(request):
 
 
 def blogs(request):
-    blog_content = Blogs.objects.all()
+    blog_content = Blogs.objects.all()    
     
     return render(request, 'blogs.html', {'blogs' : blog_content})
+

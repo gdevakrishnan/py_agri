@@ -456,17 +456,19 @@ nav ul li:hover a {
   padding: 20px 15px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 200px;
-  overflow-y: hidden;
+  height: auto;
 }
 
 .blogs .main .container .blog_title {
   color: var(--main4);
   margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: 'Kalam', cursive;
 }
 
 .blogs .main .container .content {
   color: var(--bg);
   letter-spacing: 1px;
   text-align: justify;
+  text-indent: 20px;
 }
