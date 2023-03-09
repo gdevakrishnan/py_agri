@@ -1,6 +1,24 @@
-{% extends 'template.html' %}
-{% block content %}
-    <section class="index">
-        <h2>Home Page</h2>
-    </section>
+{% extends 'template.html' %} {% block content %}
+<section class="index">
+  <div class="about_container">
+    <div class="container">
+      <img
+        src="../static/images/about_image.jpg"
+        alt="py-agri"
+        class="about_img"
+      />
+    </div>
+    <div class="about_content_container">
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem ad
+        quidem, in iusto repudiandae perferendis tempora sequi numquam culpa vel
+        necessitatibus sunt, quis atque asperiores dolorum laborum provident
+        natus quas nulla neque recusandae saepe, illo deleniti? Laudantium
+        itaque, fugit laborum minima aspernatur reprehenderit? Est dolorum esse
+        necessitatibus officiis aliquam.
+        <a href="{% url 'about'%}">Read More</a>
+      </p>
+    </div>
+  </div>
+</section>
 {% endblock %}

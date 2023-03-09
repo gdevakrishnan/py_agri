@@ -7,7 +7,9 @@ from . import views
 from .models import Blogs
 
 def index(request):
-    return render(request, 'index.html')
+    blog_content = Blogs.objects.all()    
+    
+    return render(request, 'index.html', {'blogs' : blog_content})
 
 def about(request):
     return render(request, 'about.html')
