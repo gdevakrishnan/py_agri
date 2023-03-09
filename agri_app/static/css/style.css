@@ -496,7 +496,8 @@ nav ul li:hover a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ABOUT CONTENT */
