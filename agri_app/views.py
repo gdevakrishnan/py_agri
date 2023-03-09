@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import CreateUserForm
 from django.contrib.auth.forms import UserCreationForm
 from . import views
+from .models import Blogs
 
 def index(request):
     return render(request, 'index.html')
@@ -39,3 +40,9 @@ def signup(request):
 
 def login(request):
     return render(request, 'login.html')
+
+
+def blogs(request):
+    blog_content = Blogs.objects.all()
+    
+    return render(request, 'blogs.html', {'blogs' : blog_content})
