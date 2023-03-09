@@ -434,3 +434,39 @@ nav ul li:hover a {
   font-weight: 400;
   letter-spacing: 1px;
 }
+
+/* BLOGS */
+.blogs {
+  width: 100%;
+  height: 100%;
+}
+
+.blogs .main {
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogs .main .container {
+  margin-bottom: 25px;
+  background-color: var(--main5);
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 200px;
+  overflow-y: hidden;
+}
+
+.blogs .main .container .blog_title {
+  color: var(--main4);
+  margin-bottom: 10px;
+}
+
+.blogs .main .container .content {
+  color: var(--bg);
+  letter-spacing: 1px;
+  text-align: justify;
+}
