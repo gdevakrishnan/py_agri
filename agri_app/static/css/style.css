@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  --main1: #283618;
+  /* --main1: #283618; */
+  --main1: #0F172A;
   --main2: #606c38;
   --main3: #bc6c25;
   --main4: #dda15e;
+  --main5: #1E293B;
   --footer: #161a1d;
   --bg: #fefae0;
 }
@@ -107,7 +109,7 @@ nav ul li:hover a {
     top: 50px;
     right: -40%;
     /* opacity: 0.9; */
-    background-color: var(--footer);
+    background-color: var(--main5);
     flex-direction: column;
     z-index: 1000;
     transition: all 0.6s linear;
