@@ -12,6 +12,11 @@
 * This will also prevent the starvation in the country.
 * Thus, by using our website, young farmers can find solution to any of their queries. 
 
+## Technologies Used
+* Django
+* HTML
+* CSS
+* Postgresql
 
 ## Contributors
 * Team Lead: John Wesly P. D
