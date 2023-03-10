@@ -13,7 +13,7 @@
 * Thus, by using our website, young farmers can find solution to any of their queries. 
 
 
-##Contributors
+## Contributors
 * Team Lead: John Wesly P. D
 * Pillar 1: Deva Krishnan G
 * Pillar 2: Gowtham T
